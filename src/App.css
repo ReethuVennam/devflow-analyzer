@@ -1,0 +1,181 @@
+Modern Dashboard Theme
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7fA;
+  color: #212529;
+}
+
+#root {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #343a40;
+}
+
+/* Login Button Styling */
+.login-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  border: 1px solid #0d6efd;
+  transition: background-color 0.2s;
+}
+.login-button:hover {
+  background-color: #0b5ed7;
+}
+
+/* Main Layout after Login */
+.main-content {
+  display: flex;
+  gap: 2rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.sidebar {
+  width: 350px;
+  flex-shrink: 0;
+  border-right: 1px solid #e9ecef;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.commit-view {
+  flex-grow: 1;
+}
+
+/* Profile Section */
+.profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.profile img {
+  border-radius: 50%;
+  border: 2px solid #ced4da;
+}
+
+/* Repository List */
+.repo-list ul {
+  list-style: none;
+  padding: 0;
+  max-height: 45vh;
+  overflow-y: auto;
+}
+
+.repo-list button {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ced4da;
+  color: #495057;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.repo-list button:hover {
+  background-color: #f8f9fa;
+  border-color: #0d6efd;
+}
+
+/* Stats, Issues, and PRs Boxes */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stats-box, .issues-box, .prs-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 1rem;
+}
+.stats-box h3, .issues-box h3, .prs-box h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.stats-box p, .issues-box p, .prs-box p {
+  margin: 0.5rem 0;
+  font-size: 0.9em;
+}
+
+/* Charts */
+.charts-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.charts-container .chart-container {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #e9ecef;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Commit List */
+.commit-list {
+  list-style: none;
+  padding: 0;
+}
+.commit-list li {
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+.commit-list li:last-child {
+  border-bottom: none;
+}
+.commit-list p {
+  margin: 0;
+}
+.commit-list strong {
+  font-size: 1.1em;
+  color: #0d6efd;
+}
+.commit-list p:last-child {
+  font-size: 0.8em;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+/* Logout Button */
+.logout-button {
+  width: 100%;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #6c757d;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  transition: background-color 0.2s;
+}
+.logout-button:hover {
+  background-color: #5a6268;
+}
+
+
